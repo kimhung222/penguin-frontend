@@ -1,0 +1,916 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cánh cụt shop</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="assets/css/carousel.css" />
+    <link rel="stylesheet" href="assets/css/carousel_item.css">
+    <link rel="stylesheet" href="assets/css/list-grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Sriracha" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.5.1/animate.min.css">
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url(wpp.jpg);
+            background-size: 100%;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        
+        #first-slider .slide1 {
+            background-image: url(https://i.ytimg.com/vi/gIXVXMf_a3c/maxresdefault.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        #first-slider .slide2 {
+            background-image: url(https://www.phucanh.vn/media/news/1302_p1_2210321_4417dc06.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        #first-slider .slide3 {
+            background-image: url(http://hdqwalls.com/download/2016-titanfall-2-pic-1280x720.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        #first-slider .slide4 {
+            background-image: url(http://www.wallpapermaiden.com/wallpaper/3948/download/1280x720/overwatch-tracer-hanzo-mercy-genji-widowmaker-pharah.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .textcover {
+            background-color: rgba(52, 73, 94, 0.6);
+            padding: 10px;
+        }
+        
+        .total-wrapper {
+            background-color: rgba(52, 73, 94, 0.6);
+        }
+    </style>
+    <!-- TOP COVER -->
+    <div class="top-cover">
+        <center>
+            <img align="middle" class="top-cover" src="assets/img/header.jpg">
+        </center>
+    </div>
+    <!-- -->
+    <!-- nav bar -->
+    <nav class="navbar custom" id='sidebar'>
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>-->
+                <center>
+                    <a class="navbar-brand" href="#">
+                        <img width="50%" src="assets/img/penguin.png">
+                    </a>
+                </center>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#" style="text-decoration: none;">List Game</a></li>
+                <li><a href="#" style="text-decoration: none;">Tính giá Game</a></li>
+                <li><a href="#" style="text-decoration: none;">Hướng dẫn</a></li>
+            </ul>
+            <div class="col-sm-3 col-md-3 navbar-right">
+                <form class="navbar-form" role="search">
+                    <div class="input-group" id="navsearch">
+                        <input type="text" class="form-control" placeholder="Search" name="q">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="total-wrapper">
+        <div class="container">
+            <div class="col-md-12">
+                <div id="first-slider">
+                    <div id="carousel-example-generic" class="carousel slide carousel-fade">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <!-- Item 1 -->
+                            <div class="item active slide1 ">
+                                <div class="row">
+                                    <div class="container">
+                                        <div class="col-md-12 text-left">
+                                            <h2 data-animation="animated bounceInDown" class="textcover">PLAYERUNKNOWN'S BATTLEGROUNDS (SEA Gift)</h3>
+                                                <div class="space-2"></div>
+                                                <h4 data-animation="animated bounceInUp" class="textcover">340.000 (Card: 430.000)</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="item slide2 ">
+                                <div class="row">
+                                    <div class="container">
+                                        <div class="col-md-12 text-left">
+                                            <h2 data-animation="animated bounceInDown" class="textcover">BATTLEFIELD 1</h2>
+                                            <h4 data-animation="animated bounceInUp" class="textcover">850.000 (Card: 1070.000)</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="item slide3 ">
+                                <div class="row">
+                                    <div class="container">
+                                        <div class="col-md-3 text-right">
+                                            <!--<img style="max-width: 200px;" data-animation="animated zoomInLeft" src="http://s20.postimg.org/pfmmo6qj1/window_domain.png">-->
+                                        </div>
+                                        <div class="col-md-9 text-left">
+                                            <h2 data-animation="animated bounceInDown" class="textcover">Titan Fall 2</h2>
+                                            <h4 data-animation="animated bounceInUp" class="textcover">600.000 (Card: 750.000)</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="item slide4 ">
+                                <div class="row">
+                                    <div class="container">
+                                        <div class="col-md-3 text-right">
+                                            <!--<img style="max-width: 200px;" data-animation="animated zoomInLeft" src="http://s20.postimg.org/pfmmo6qj1/window_domain.png">-->
+                                        </div>
+                                        <div class="col-md-9 text-left">
+                                            <h3 data-animation="animated bounceInDown" class="textcover">Over Watch - Origin Edition</h3>
+                                            <h4 data-animation="animated bounceInUp" class="textcover">940.000 (Card: 1180.000)</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Item 4 -->
+
+                        </div>
+                        <!-- End Wrapper for slides-->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <i class="fa fa-angle-left"></i><span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <i class="fa fa-angle-right"></i><span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space-2"></div>
+        <!-- Game List -->
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-9" style="color: rgba(192, 57, 43,1.0);font-size:70">
+                        <h3>Bán chạy</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <!-- Controls -->
+                        <div class="controls pull-right hidden-xs">
+                            <a class="left fa fa-chevron-left btn btn-success" href="#carousel-example" data-slide="prev"></a>
+                            <a class="right fa fa-chevron-right btn btn-success" href="#carousel-example" data-slide="next"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="http://cdn.akamai.steamstatic.com/steam/apps/480490/header.jpg?t=1494263332" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h6 class="price-text-color">1.290.000</h6>
+                                                    <h5 class="price-text-color">(Card: 1.610.000)</h5>
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="https://www.messenger.com/t/shopgamecanhcut" target="_blank" class="hidden-sm">Liên hệ</a></p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a></p>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="http://i.imgur.com/gpCXZPz.jpg" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h6 class="price-text-color">1.275.000</h6>
+                                                    <h5 class="price-text-color">(Card: 1.600.000)</h5>
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="https://www.messenger.com/t/shopgamecanhcut" target="_blank" class="hidden-sm">Liên hệ</a></p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a></p>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="col-item">
+                                        <div class="photo">
+                                            <img src="http://cdn.akamai.steamstatic.com/steam/apps/271590/header.jpg?t=1494948827" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+
+                                                <div class="price col-md-6">
+                                                    <h6 class="price-text-color">1.260.000</h6>
+                                                    <h5 class="price-text-color">(Card:1.580.000)</h5>
+                                                </div>
+
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="https://www.messenger.com/t/shopgamecanhcut" target="_blank" class="hidden-sm">Liên hệ</a></p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a></p>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="col-item" style="margin-top:5px;">
+                                        <div class="photo">
+                                            <img src="http://pixeljudge.com/wp-content/uploads/2016/03/OverwatchList.jpg" class="img-responsive" alt="a" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="price col-md-6">
+                                                    <h6 class="price-text-color">950.000</h6>
+                                                    <h5 class="price-text-color">(Card:1.180.000)</h5>
+                                                </div>
+                                            </div>
+                                            <div class="separator clear-left">
+                                                <p class="btn-add">
+                                                    <i class="fa fa-shopping-cart"></i><a href="https://www.messenger.com/t/shopgamecanhcut" target="_blank" class="hidden-sm">Liên hệ</a></p>
+                                                <p class="btn-details">
+                                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a></p>
+                                            </div>
+                                            <div class="clearfix">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Game Grid -->
+        <div class="space-2"></div>
+        <div class="space-2"></div>
+
+        <!-- List Game -->
+        <div class="container">
+            <div id="products" class="row list-group">
+                <div class="col-sm-3">
+                    <div class="col-item" style="margin-top:5px;">
+                        <div class="photo">
+                            <img src="http://cdn.akamai.steamstatic.com/steam/apps/433850/header.jpg?t=1491861609" class="img-responsive" alt="a" />
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="price col-md-6">
+                                    <h6 class="price-text-color">(GIFT)410.000</h6>
+                                    <h5 class="price-text-color">(Card:510.000)</h5>
+                                </div>
+                            </div>
+                            <div class="separator clear-left">
+                                <p class="btn-add">
+                                    <i class="fa fa-shopping-cart"></i><a href="https://www.messenger.com/t/shopgamecanhcut" target="_blank" class="hidden-sm">Liên hệ</a></p>
+                                <p class="btn-details">
+                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a></p>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="col-item" style="margin-top:5px;">
+                        <div class="photo">
+                            <img src="http://cdn.akamai.steamstatic.com/steam/apps/433850/header.jpg?t=1491861609" class="img-responsive" alt="a" />
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="price col-md-6">
+                                    <h6 class="price-text-color">(KEY)370.000</h6>
+                                    <h5 class="price-text-color">(Card:460.000)</h5>
+                                </div>
+                            </div>
+                            <div class="separator clear-left">
+                                <p class="btn-add">
+                                    <i class="fa fa-shopping-cart"></i><a href="https://www.messenger.com/t/shopgamecanhcut" target="_blank" class="hidden-sm">Liên hệ</a></p>
+                                <p class="btn-details">
+                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a></p>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="col-item" style="margin-top:5px;">
+                        <div class="photo">
+                            <img src="http://cdn.akamai.steamstatic.com/steam/apps/252950/header.jpg?t=1494284117" class="img-responsive" alt="a" />
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="price col-md-6">
+                                    <h6 class="price-text-color">290.000</h6>
+                                    <h5 class="price-text-color">(Card:360.000)</h5>
+                                </div>
+                            </div>
+                            <div class="separator clear-left">
+                                <p class="btn-add">
+                                    <i class="fa fa-shopping-cart"></i><a href="https://www.messenger.com/t/shopgamecanhcut" target="_blank" class="hidden-sm">Liên hệ</a></p>
+                                <p class="btn-details">
+                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a></p>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="col-item" style="margin-top:5px;">
+                        <div class="photo">
+                            <img src="http://cdn.akamai.steamstatic.com/steam/apps/285190/header.jpg?t=1493396047" class="img-responsive" alt="a" />
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="price col-md-6">
+                                    <h6 class="price-text-color">(KEY)920.000</h6>
+                                    <h5 class="price-text-color">(Card:1.150.000)</h5>
+                                </div>
+                            </div>
+                            <div class="separator clear-left">
+                                <p class="btn-add">
+                                    <i class="fa fa-shopping-cart"></i><a href="https://www.messenger.com/t/shopgamecanhcut" target="_blank" class="hidden-sm">Liên hệ</a></p>
+                                <p class="btn-details">
+                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a></p>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="col-item" style="margin-top:5px;">
+                        <div class="photo">
+                            <img src="http://cdn.akamai.steamstatic.com/steam/apps/285190/header.jpg?t=1493396047" class="img-responsive" alt="a" />
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="price col-md-6">
+                                    <h6 class="price-text-color">1.320.000</h6>
+                                    <h5 class="price-text-color">(Card:1.650.000)</h5>
+                                </div>
+                            </div>
+                            <div class="separator clear-left">
+                                <p class="btn-add">
+                                    <i class="fa fa-shopping-cart"></i><a href="https://www.messenger.com/t/shopgamecanhcut" target="_blank" class="hidden-sm">Liên hệ</a></p>
+                                <p class="btn-details">
+                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a></p>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="col-item" style="margin-top:5px;">
+                        <div class="photo">
+                            <img src="http://i.imgur.com/5diJGYt.png" class="img-responsive" alt="a" />
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="price col-md-6">
+                                    <h6 class="price-text-color">160.000</h6>
+                                    <h5 class="price-text-color">(Card:200.000)</h5>
+                                </div>
+                            </div>
+                            <div class="separator clear-left">
+                                <p class="btn-add">
+                                    <i class="fa fa-shopping-cart"></i><a href="https://www.messenger.com/t/shopgamecanhcut" target="_blank" class="hidden-sm">Liên hệ</a></p>
+                                <p class="btn-details">
+                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a></p>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="col-item" style="margin-top:5px;">
+                        <div class="photo">
+                            <img src="http://i.imgur.com/5diJGYt.png" class="img-responsive" alt="a" />
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="price col-md-6">
+                                    <h6 class="price-text-color">(Pre)250.000</h6>
+                                    <h5 class="price-text-color">(Card:320.000)</h5>
+                                </div>
+                            </div>
+                            <div class="separator clear-left">
+                                <p class="btn-add">
+                                    <i class="fa fa-shopping-cart"></i><a href="https://www.messenger.com/t/shopgamecanhcut" target="_blank" class="hidden-sm">Liên hệ</a></p>
+                                <p class="btn-details">
+                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a></p>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="col-item" style="margin-top:5px;">
+                        <div class="photo">
+                            <img src="http://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg?t=1490209724" class="img-responsive" alt="a" />
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="price col-md-6">
+                                    <h6 class="price-text-color">SEA: 160.000</h6>
+                                    <h5 class="price-text-color">(Card:200.000)</h5>
+                                </div>
+                            </div>
+                            <div class="separator clear-left">
+                                <p class="btn-add">
+                                    <i class="fa fa-shopping-cart"></i><a href="https://www.messenger.com/t/shopgamecanhcut" target="_blank" class="hidden-sm">Liên hệ</a></p>
+                                <p class="btn-details">
+                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a></p>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="col-item" style="margin-top:5px;">
+                        <div class="photo">
+                            <img src="http://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg?t=1490209724" class="img-responsive" alt="a" />
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="price col-md-6">
+                                    <h6 class="price-text-color">GLOBAL: 290.000</h6>
+                                    <h5 class="price-text-color">(Card:360.000)</h5>
+                                </div>
+                            </div>
+                            <div class="separator clear-left">
+                                <p class="btn-add">
+                                    <i class="fa fa-shopping-cart"></i><a href="https://www.messenger.com/t/shopgamecanhcut" target="_blank" class="hidden-sm">Liên hệ</a></p>
+                                <p class="btn-details">
+                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a></p>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="col-item" style="margin-top:5px;">
+                        <div class="photo">
+                            <img src="https://www.pandikey.com/images/produits_images/miniature/battlefield-1-909.jpg" class="img-responsive" alt="a" />
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="price col-md-6">
+                                    <h6 class="price-text-color">850.000</h6>
+                                    <h5 class="price-text-color">(Card:1.070.000)</h5>
+                                </div>
+                            </div>
+                            <div class="separator clear-left">
+                                <p class="btn-add">
+                                    <i class="fa fa-shopping-cart"></i><a href="https://www.messenger.com/t/shopgamecanhcut" target="_blank" class="hidden-sm">Liên hệ</a></p>
+                                <p class="btn-details">
+                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a></p>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="col-item" style="margin-top:5px;">
+                        <div class="photo">
+                            <img src="http://www.gamercrowd.net/wp-content/uploads/2015/08/battlefield-4-cover.jpg" class="img-responsive" alt="a" />
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="price col-md-6">
+                                    <h6 class="price-text-color">180.000</h6>
+                                    <h5 class="price-text-color">(Card:230.000)</h5>
+                                </div>
+                            </div>
+                            <div class="separator clear-left">
+                                <p class="btn-add">
+                                    <i class="fa fa-shopping-cart"></i><a href="https://www.messenger.com/t/shopgamecanhcut" target="_blank" class="hidden-sm">Liên hệ</a></p>
+                                <p class="btn-details">
+                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a></p>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="col-item" style="margin-top:5px;">
+                        <div class="photo">
+                            <img src="https://i1.wp.com/skidrowgamesreloaded.com/wp-content/uploads/2016/10/Titanfall-2-TRAINER.png?fit=460%2C215&ssl=1" class="img-responsive" alt="a" />
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="price col-md-6">
+                                    <h6 class="price-text-color">600.000</h6>
+                                    <h5 class="price-text-color">(Card:750.000)</h5>
+                                </div>
+                            </div>
+                            <div class="separator clear-left">
+                                <p class="btn-add">
+                                    <i class="fa fa-shopping-cart"></i><a href="https://www.messenger.com/t/shopgamecanhcut" target="_blank" class="hidden-sm">Liên hệ</a></p>
+                                <p class="btn-details">
+                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a></p>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="col-item" style="margin-top:5px;">
+                        <div class="photo">
+                            <img src="http://pixeljudge.com/wp-content/uploads/2016/03/OverwatchList.jpg" class="img-responsive" alt="a" />
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="price col-md-6">
+                                    <h6 class="price-text-color">950.000</h6>
+                                    <h5 class="price-text-color">(Card:1.180.000)</h5>
+                                </div>
+                            </div>
+                            <div class="separator clear-left">
+                                <p class="btn-add">
+                                    <i class="fa fa-shopping-cart"></i><a href="https://www.messenger.com/t/shopgamecanhcut" target="_blank" class="hidden-sm">Liên hệ</a></p>
+                                <p class="btn-details">
+                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a></p>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="col-item" style="margin-top:5px;">
+                        <div class="photo">
+                            <img src="http://cdn.akamai.steamstatic.com/steam/apps/271590/header.jpg?t=1494948827" class="img-responsive" alt="a" />
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="price col-md-6">
+                                    <h6 class="price-text-color">GLOBAL: 1.280.000</h6>
+                                    <h5 class="price-text-color">(Card:1.600.000)</h5>
+                                </div>
+                            </div>
+                            <div class="separator clear-left">
+                                <p class="btn-add">
+                                    <i class="fa fa-shopping-cart"></i><a href="https://www.messenger.com/t/shopgamecanhcut" target="_blank" class="hidden-sm">Liên hệ</a></p>
+                                <p class="btn-details">
+                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a></p>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="col-item" style="margin-top:5px;">
+                        <div class="photo">
+                            <img src="http://cdn.akamai.steamstatic.com/steam/apps/271590/header.jpg?t=1494948827" class="img-responsive" alt="a" />
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="price col-md-6">
+                                    <h6 class="price-text-color">SEA: 760.000</h6>
+                                    <h5 class="price-text-color">(Card:950.000)</h5>
+                                </div>
+                            </div>
+                            <div class="separator clear-left">
+                                <p class="btn-add">
+                                    <i class="fa fa-shopping-cart"></i><a href="https://www.messenger.com/t/shopgamecanhcut" target="_blank" class="hidden-sm">Liên hệ</a></p>
+                                <p class="btn-details">
+                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a></p>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="col-item" style="margin-top:5px;">
+                        <div class="photo">
+                            <img src="http://cdn.akamai.steamstatic.com/steam/apps/346110/header.jpg?t=1490980630" class="img-responsive" alt="a" />
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="price col-md-6">
+                                    <h6 class="price-text-color">GLOBAL: 390.000</h6>
+                                    <h5 class="price-text-color">(Card:490.000)</h5>
+                                </div>
+                            </div>
+                            <div class="separator clear-left">
+                                <p class="btn-add">
+                                    <i class="fa fa-shopping-cart"></i><a href="https://www.messenger.com/t/shopgamecanhcut" target="_blank" class="hidden-sm">Liên hệ</a></p>
+                                <p class="btn-details">
+                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a></p>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="col-item" style="margin-top:5px;">
+                        <div class="photo">
+                            <img src="http://cdn.akamai.steamstatic.com/steam/apps/346110/header.jpg?t=1490980630" class="img-responsive" alt="a" />
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="price col-md-6">
+                                    <h6 class="price-text-color">SEA: 190.000</h6>
+                                    <h5 class="price-text-color">(Card:240.000)</h5>
+                                </div>
+                            </div>
+                            <div class="separator clear-left">
+                                <p class="btn-add">
+                                    <i class="fa fa-shopping-cart"></i><a href="https://www.messenger.com/t/shopgamecanhcut" target="_blank" class="hidden-sm">Liên hệ</a></p>
+                                <p class="btn-details">
+                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a></p>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="col-item">
+                        <div class="photo">
+                            <img src="http://cdn.akamai.steamstatic.com/steam/apps/578080/header.jpg?t=1493220159" class="img-responsive" alt="a" />
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="price col-md-6">
+                                    <h6 class="price-text-color">340.000</h6>
+                                    <h5 class="price-text-color">(Card:430.000)</h5>
+                                </div>
+                            </div>
+                            <div class="separator clear-left">
+                                <p class="btn-add">
+                                    <i class="fa fa-shopping-cart"></i><a href="https://www.messenger.com/t/shopgamecanhcut" target="_blank" class="hidden-sm">Liên hệ</a></p>
+                                <p class="btn-details">
+                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a></p>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="col-item">
+                        <div class="photo">
+                            <img src="http://i.imgur.com/gybgG.jpg" class="img-responsive" alt="a" />
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="price col-md-6">
+                                    <h6 class="price-text-color">270.000</h6>
+                                    <h5 class="price-text-color">(Card:330.000)</h5>
+                                </div>
+                            </div>
+                            <div class="separator clear-left">
+                                <p class="btn-add">
+                                    <i class="fa fa-shopping-cart"></i><a href="https://www.messenger.com/t/shopgamecanhcut" target="_blank" class="hidden-sm">Liên hệ</a></p>
+                                <p class="btn-details">
+                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a></p>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="col-item">
+                        <div class="photo">
+                            <img src="https://digitarius.net/fileman/Uploads/D/diablo-3-reaper-of-souls.jpg" class="img-responsive" alt="a" />
+                        </div>
+                        <div class="info">
+                            <div class="row">
+                                <div class="price col-md-6">
+                                    <h6 class="price-text-color">270.000</h6>
+                                    <h5 class="price-text-color">(Card:330.000)</h5>
+                                </div>
+                            </div>
+                            <div class="separator clear-left">
+                                <p class="btn-add">
+                                    <i class="fa fa-shopping-cart"></i><a href="https://www.messenger.com/t/shopgamecanhcut" target="_blank" class="hidden-sm">Liên hệ</a></p>
+                                <p class="btn-details">
+                                    <i class="fa fa-list"></i><a href="#" class="hidden-sm">Chi tiết</a></p>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--<div class="item  col-xs-3 col-lg-3">
+                    <div class="thumbnail">
+                        <img class="group list-group-image" src="http://cdn.edgecast.steamstatic.com/steam/apps/418370/header.jpg?t=1485771880" alt="" />
+                        <div class="product-price">
+                            <div class="row product-row">
+                                <div class="left-col">
+
+                                    <p>1.250.000</p>
+
+                                </div>
+                                <div class="right-col">
+
+                                    <p>1.250.000</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item  col-xs-3 col-lg-3">
+                    <div class="thumbnail">
+                        <img class="group list-group-image" src="http://cdn.edgecast.steamstatic.com/steam/apps/418370/header.jpg?t=1485771880" alt="" />
+                    </div>
+                </div>
+                <div class="item  col-xs-3 col-lg-3">
+                    <div class="thumbnail">
+                        <img class="group list-group-image" src="http://cdn.edgecast.steamstatic.com/steam/apps/418370/header.jpg?t=1485771880" alt="" />
+                    </div>
+                </div>
+                <div class="item  col-xs-3 col-lg-3">
+                    <div class="thumbnail">
+                        <img class="group list-group-image" src="http://cdn.edgecast.steamstatic.com/steam/apps/418370/header.jpg?t=1485771880" alt="" />
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    <footer class="site-footer">
+        <div class="footer" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-2 col-sm-4 col-xs-6" style="margin-top:45px">
+                        <ul>
+                            <li>
+                                <div class="facebook-page">
+                                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fshopgamecanhcut%2F&amp;tabs&amp;width=340&amp;height=130&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false&amp;appId"
+                                        width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+                                </div>
+                            </li>
+                        </ul>
+                        <!--                     <h3> Lorem Ipsum </h3>
+                    <ul>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                    </ul> -->
+                    </div>
+                    <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                        <!--                     <h3> Lorem Ipsum </h3>
+                    <ul>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                    </ul> -->
+                    </div>
+                    <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                        <!--                     <h3> Lorem Ipsum </h3>
+                    <ul>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                        <li> <a href="#"> Lorem Ipsum </a> </li>
+                    </ul> -->
+                    </div>
+                    <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+                        <h3> Cánh cụt ShOP </h3>
+                        <ul>
+                            <li>
+                                <div class="input-append newsletter-box">
+                                    <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i>: 0186 861 9094 </li>
+                                        <li> <i class="fa fa-envelope" aria-hidden="true"></i>: jentybbxer@gmail.com </li>
+                                        <li> <i class="fa fa-location-arrow" aria-hidden="true"></i>: 71000 Tô Ký, Sài Gòn, Hồ Chí Minh, Vietnam </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="social">
+                            <li>
+                                <a href="https://www.facebook.com/shopgamecanhcut/"> <i class=" fa fa-facebook"> &nbsp; </i> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="fa fa-twitter"> &nbsp; </i> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="fa fa-google-plus"> &nbsp; </i> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="fa fa-pinterest"> &nbsp; </i> </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCUXpszYfvILk_le73rUmdLw"> <i class="fa fa-youtube"> &nbsp; </i> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--/.row-->
+            </div>
+            <!--/.container-->
+        </div>
+        <!--/.footer-->
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="pull-left"> Developed by <a href="https://www.facebook.com/leonkygami1">Mei Ling</a> and <a href="https://www.facebook.com/beep.beep.319">TXL</a>. </p>
+                <div class="pull-right">
+                    <ul class="nav nav-pills payments">
+                        <li><i class="fa fa-cc-visa"></i></li>
+                        <li><i class="fa fa-cc-mastercard"></i></li>
+                        <li><i class="fa fa-cc-amex"></i></li>
+                        <li><i class="fa fa-cc-paypal"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--/.footer-bottom-->
+    </footer>
+
+
+    <!-- -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+    <script type="text/javascript" src="assets/js/carousel.js"></script>
+
+</body>
+
+</html>

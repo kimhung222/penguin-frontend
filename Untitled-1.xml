@@ -1,0 +1,44 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="class">
+  <xs:complexType>
+   <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="room" type="xs:string"/>
+      <xs:element name="time">
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:pattern value="[0-12]"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="day">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:pattern value="Monday|Tuesday|Wednesday|Thursday|Friday"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="quantity" type="xs:integer"/>
+      <xs:element name="students">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:attribute name="id" type="string">
+			</xs:attribute>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="mobile" use="optional">
+				<xs:simpleType>
+                	<xs:restriction base="xs:integer">
+                	<xs:pattern value="[0-9]{10}"/>
+                </xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+</xs:schema>
